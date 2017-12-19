@@ -231,6 +231,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
+  factory_bot
   factory_bot_rails
   haml-rails (~> 1.0)
   jbuilder (~> 2.5)

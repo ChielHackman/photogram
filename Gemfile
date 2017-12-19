@@ -43,6 +43,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.6'
   gem 'capybara'
   gem 'factory_bot_rails'
+  gem "factory_bot"
 end
 
 group :development do
