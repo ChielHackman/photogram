@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 feature "Can show one single post" do
+  background do
+    user = create(:user)
+    sign_in_with user
+  end
+
   scenario "when click on post, show single post" do
     post = create(:post)
 

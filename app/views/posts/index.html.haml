@@ -3,7 +3,7 @@
   .post
     .post-head
       .name
-        Chiel Hackman
+        = post.user.user_name
       .image.center-block
         = link_to post do
           = image_tag post.image.url(:medium), class: 'img-responsive'
