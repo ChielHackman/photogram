@@ -32,9 +32,16 @@ class PostsController < ApplicationController
       flash[:success] = "Post updated hombre"
       redirect_to @post
     else
-      flash[:error] = "Something went wrong, please try again."
+      flash[:error] = "Something is wrong with your form!"
       render :edit
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    flash[:success] = "Problem solved! Post deleted."
+    redirect_to root_path
   end
 
   private
