@@ -1,6 +1,11 @@
-%h1 Photogram
-= link_to "New post", new_post_path
+.post-wrapper.row
 - @posts.each do |post|
-  = link_to post do
-    = image_tag post.image.url(:medium)
-  = post.caption
+  .post
+    .post-head
+      .name
+        Chiel Hackman
+      .image.center-block
+        = link_to post do
+          = image_tag post.image.url(:medium), class: 'img-responsive'
+      %p.caption
+        = post.caption
